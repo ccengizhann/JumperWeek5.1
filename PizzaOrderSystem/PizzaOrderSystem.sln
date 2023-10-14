@@ -3,9 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8D18D104-A0F5-4668-9A33-AECB7C29E6A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{AA35B9AA-D2CE-4919-AE4F-7BFDFAB57235}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{7CDCCE6E-555D-4324-B640-9D6B45492EB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaOrderSystem.MVC", "Presentation\PizzaOrderSystem.MVC\PizzaOrderSystem.MVC.csproj", "{2C2C071F-62FB-48F7-BEEE-58901E2121FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaOrderSystem.Domain", "Core\PizzaOrderSystem.Domain\PizzaOrderSystem.Domain.csproj", "{A6AF3D29-5B82-4502-AD90-B6CB21119F64}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C2C071F-62FB-48F7-BEEE-58901E2121FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C2C071F-62FB-48F7-BEEE-58901E2121FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C2C071F-62FB-48F7-BEEE-58901E2121FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C2C071F-62FB-48F7-BEEE-58901E2121FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6AF3D29-5B82-4502-AD90-B6CB21119F64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6AF3D29-5B82-4502-AD90-B6CB21119F64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6AF3D29-5B82-4502-AD90-B6CB21119F64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6AF3D29-5B82-4502-AD90-B6CB21119F64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2C2C071F-62FB-48F7-BEEE-58901E2121FE} = {7CDCCE6E-555D-4324-B640-9D6B45492EB0}
+		{A6AF3D29-5B82-4502-AD90-B6CB21119F64} = {8D18D104-A0F5-4668-9A33-AECB7C29E6A9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B49AC446-2DA8-4C4E-A2EF-6A51E436830D}
